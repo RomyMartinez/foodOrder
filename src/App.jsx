@@ -8,7 +8,7 @@ import { fetchAvailableFood } from './https'
 import { CardFoods } from './components/FoodsView/CardFoods'
 import { Error } from './components/UI/Error'
 import { CartContext, CartProvider } from './burguerStore/storeContext'
-import { UserProgressProvider } from './burguerStore/UserProgress'
+import { UserProgressProvider } from './burguerStore/userProgress'
 
 import { useFetch } from './hooks.jsx/useFetch'
 
