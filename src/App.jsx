@@ -8,9 +8,9 @@ import { fetchAvailableFood } from './https'
 import { CardFoods } from './components/FoodsView/CardFoods'
 import { Error } from './components/UI/Error'
 import { CartContext, CartProvider } from './burguerStore/storeContext'
+import { UserProgressProvider } from './burguerStore/UserProgress'
 
 import { useFetch } from './hooks.jsx/useFetch'
-import { UserProgressProvider } from './burguerStore/UserProgress'
 
 function App() {
   const { cartOrders } = useContext(CartContext)
@@ -24,14 +24,14 @@ function App() {
   console.log(cartOrders)
 
   return (
-      <CartProvider>
-        <UserProgressProvider>
+    <CartProvider>
+      <UserProgressProvider>
         <Header />
-          {isLoading && <p>loading menu</p>}
-          {error && <Error message={error.message} />}
-          {!error && <CardFoods foods={availableFoods} />}
-        </UserProgressProvider>
-      </CartProvider>
+        {isLoading && <p>loading menu</p>}
+        {error && <Error message={error.message} />}
+        {!error && <CardFoods foods={availableFoods} />}
+      </UserProgressProvider>
+    </CartProvider>
   )
 }
 
