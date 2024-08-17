@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { UserProgressContext } from '../../burguerStore/UserProgress'
+import { UserProgressContext } from '../../burguerStore/userProgress'
 
 export function OrderCreated() {
   const { handleCheckout } = useContext(UserProgressContext)

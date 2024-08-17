@@ -1,6 +1,6 @@
 import reactFood from '../assets/logo.jpg'
 import { CartContext } from '../burguerStore/storeContext'
-import { UserProgressContext } from '../burguerStore/UserProgress'
+import { UserProgressContext } from '../burguerStore/userProgress'
 import { useContext } from 'react'
 
 export function Header() {
