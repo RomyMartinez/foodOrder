@@ -5,7 +5,7 @@ export function Card({ meal }) {
   const { handleAddCart } = useContext(CartContext)
   return (
     <article>
-      <img src={`../images/${meal.image}`} alt={meal.title} />
+      <img src={`./images/${meal.image}`} alt={meal.title} />
       <div>
         <h3>{meal.title}</h3>
         <p className="meal-item-price">{meal.price}</p>
