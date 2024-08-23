@@ -1,5 +1,5 @@
 export async function fetchAvailableFood() {
-  const response = await fetch('https://food-order-eyoa.vercel.app/meals')
+  const response = await fetch('http://localhost:3000/meals')
   const responseData = await response.json()
 
   if (!response.ok) {
@@ -10,7 +10,7 @@ export async function fetchAvailableFood() {
 }
 
 export async function fetchOrdersFood(order) {
-  const response = await fetch('https://food-order-eyoa.vercel.app/orders', {
+  const response = await fetch('http://localhost:3000/orders', {
     method: 'POST',
     body: JSON.stringify({ order }),
     headers: {
