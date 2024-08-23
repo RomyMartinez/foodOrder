@@ -6,7 +6,7 @@ export function Card({ meal }) {
   return (
     <article>
       <img
-        src={`https://food-order-blue.vercel.app/images/${meal.image}`}
+        src={`https://food-order-blue.vercel.app/${meal.image}`}
         alt={meal.title}
       />
       <div>
