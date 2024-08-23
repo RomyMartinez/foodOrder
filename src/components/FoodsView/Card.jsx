@@ -6,7 +6,7 @@ export function Card({ meal }) {
   return (
     <article>
       <img
-        src={`${process.env.PUBLIC_URL}/images/${meal.image}`}
+        src={`https://food-order-blue.vercel.app/images/${meal.image}`}
         alt={meal.title}
       />
       <div>
